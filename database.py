@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 DB_CONFIG = {
     "host":"localhost",
     "port":5432,
-    "database":"Crud for book",
+    "database":"Crud_for_book",
     "user":"postgres",
     "password":"55055904855"
 }
