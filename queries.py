@@ -101,7 +101,7 @@ async def update_book(id:int, title:str, description:str, price:int, user_id:int
 
 async def delete_book(id:int):
     async with get_connection as conn:
-        res = await conn.execute("DELETE FROM books WHERE ID = $1", id)
+        res = await conn.execute("DELETE FROM BOOKS WHERE ID = $1", id)
         if not res:
                 raise HTTPException(status_code=404, detail="Book not found")
         return {"message":"Successfully deleted."}

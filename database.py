@@ -10,6 +10,7 @@ DB_CONFIG = {
     "password":"55055904855"
 }
 
+@asynccontextmanager
 async def get_connection():
     conn = await asyncpg.connect(**DB_CONFIG)
     try:
